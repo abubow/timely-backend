@@ -14,7 +14,6 @@ func hello(c *gin.Context) {
 func main() {
 	fmt.Println("Hello World!")
 	r := gin.Default()
-	// on /hello path
 	r.GET("/hello", hello)
-	r.Run() // listen and serve on
+	r.Run()
 }
